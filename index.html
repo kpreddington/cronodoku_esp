@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cronodoku 1 · Soluciones paso a paso</title>
+<meta name="description" content="Descarga gratis las soluciones razonadas paso a paso de los 80 casos de Cronodoku 1: Atrapados en el Edelweiss, de K. P. Reddington.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --noche: #0E1A2F;
+    --noche2: #1D3253;
+    --oro: #D8B45A;
+    --oro-claro: #F1DCA0;
+    --nieve: #EEF3F8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--noche) 0%, var(--noche2) 60%, #2E4A70 100%);
+    color: var(--nieve);
+    font-family: "Lora", Georgia, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+  }
+  main {
+    width: 100%;
+    max-width: 560px;
+    border: 1.5px solid var(--oro);
+    outline: 1px solid var(--oro);
+    outline-offset: 5px;
+    padding: 36px 28px 30px;
+    text-align: center;
+  }
+  .serie {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 700;
+    font-size: clamp(34px, 9vw, 48px);
+    letter-spacing: 0.02em;
+    margin: 0;
+    line-height: 1.05;
+  }
+  .serie span { color: var(--oro); }
+  .sub {
+    font-family: "Bodoni Moda", serif;
+    font-style: italic;
+    color: var(--oro-claro);
+    font-size: clamp(20px, 5.5vw, 26px);
+    margin: 10px 0 0;
+  }
+  .rombo {
+    margin: 20px auto;
+    width: 220px;
+    max-width: 70%;
+    height: 1px;
+    background: var(--oro);
+    position: relative;
+  }
+  .rombo::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 9px;
+    height: 9px;
+    background: var(--oro);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  img.portada {
+    width: 180px;
+    max-width: 50%;
+    height: auto;
+    border: 1px solid var(--oro);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    margin: 6px 0 20px;
+  }
+  h2 {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  p { font-size: 16px; line-height: 1.6; margin: 0 0 14px; }
+  .boton {
+    display: inline-block;
+    margin: 10px 0 18px;
+    padding: 15px 28px;
+    background: var(--oro);
+    color: var(--noche);
+    font-family: "Bodoni Moda", serif;
+    font-weight: 700;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+  .boton:hover, .boton:focus-visible { background: var(--oro-claro); }
+  .nota {
+    font-style: italic;
+    color: var(--oro-claro);
+    font-size: 14px;
+  }
+  .aviso {
+    border: 1px solid rgba(216, 180, 90, 0.6);
+    padding: 12px 14px;
+    font-size: 14.5px;
+    margin: 6px 0 20px;
+  }
+  footer {
+    margin-top: 22px;
+    font-family: "Bodoni Moda", serif;
+    letter-spacing: 0.25em;
+    font-size: 13px;
+    color: var(--oro-claro);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1 class="serie">CRONODOKU <span>1</span></h1>
+  <p class="sub">Atrapados en el Edelweiss</p>
+  <div class="rombo" role="presentation"></div>
+
+  <img class="portada" src="portada.jpg" alt="Portada de Cronodoku 1: Atrapados en el Edelweiss">
+
+  <h2>Soluciones paso a paso</h2>
+  <p>¿Te has quedado atascado en algún caso? Aquí tienes los 80 casos resueltos casilla a casilla, con el
+     razonamiento de cada paso: qué pista lo indica, qué sala está ocupada y por qué no puede ser de otra manera.</p>
+
+  <div class="aviso">Lleva las soluciones de <strong>todos</strong> los casos. Si no quieres destripar otros,
+     ve directamente al que te interesa.</div>
+
+  <a class="boton" href="cronodoku-1-soluciones.pdf" download>Descargar las soluciones (PDF)</a>
+
+  <p class="nota">Gratis · PDF de 170 páginas · 0,5 MB</p>
+
+  <footer>K. P. REDDINGTON</footer>
+</main>
+</body>
+</html>
